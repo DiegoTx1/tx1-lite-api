@@ -1,22 +1,25 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>TX1 Lite Real API</title>
+  <title>TX1 Lite Real Pro</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="header">
-    <h1>TX1 LITE REAL - Leitura de BTC/USDT</h1>
-    <p>Fonte: API Binance | Intervalo: M1</p>
+    <h1>TX1 LITE REAL PRO</h1>
+    <p>BTC/USDT ao vivo • RSI(14) • Engolfo • Médias Móveis • Reversão</p>
+    <p id="countdown">Próxima leitura em: 60s</p>
   </div>
   <div class="panel">
     <h2>Comando Atual:</h2>
     <div id="signal" class="signal-box">CARREGANDO...</div>
     <p id="criteria">Buscando velas...</p>
+    <h3>Histórico de Sinais:</h3>
+    <ul id="history"></ul>
   </div>
-
+  <iframe src="https://s.tradingview.com/embed-widget/mini-symbol-overview/?locale=br#{"symbol":"BINANCE:BTCUSDT","interval":"1","theme":"dark"}" width="100%" height="180" frameborder="0"></iframe>
+  <audio id="alert" src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg" preload="auto"></audio>
   <script src="script.js"></script>
 </body>
 </html>
